@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Workbox Responsive Image Quality</title>
+  </head>
+
+  <body>
+    <img
+      src="https://res.cloudinary.com/arnellebalane/image/fetch/w_1000,q_100/https://gdgcebu.org/hero-image.jpg"
+      alt="Sample Image"
+      width="1000"
+      height="662"
+    />
+
+    <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('/sw.js');
+      }
+    </script>
+  </body>
+</html>
